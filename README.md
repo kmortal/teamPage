@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://kmortal.github.io/teamPageMaster">
+    <a href="https://kmortal.github.io/teamPage">
       Demo
     </a>
     <span> | </span>
