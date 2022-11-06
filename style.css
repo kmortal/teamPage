@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@600&display=swap');
+
+*{margin:0;padding: 0;}
+
+header{
+    padding-top: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+header section{
+    width: 40%;
+}
+
+h1{
+    font-family: 'PT Serif', 'serif';
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+img{
+    height: 33vh;
+    margin-top: 3vh;
+}
+
+article{
+    position: relative;
+    left: 10vw;
+    width: 60vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "firstGroupOfPhotos middleGroupOfPhotos lastGroupOfPhotos" 
+    "firstGroupOfPhotos middleGroupOfPhotos lastGroupOfPhotos"
+    ;
+    align-items: center;
+    justify-items: end;
+}
+
+article section{
+    width: 15vw;
+}
+
+article section:first-of-type{
+    grid-area: firstGroupOfPhotos;
+}
+
+article section:nth-child(even){
+    grid-area: middleGroupOfPhotos;
+    align-self: end;
+}
+
+article section:last-of-type{
+   grid-area: lastGroupOfPhotos;
+}
+
+article span{
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'PT Serif', 'serif';
+    height: 33vh;
+    writing-mode: vertical-lr;
+    text-align: start;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+figcaption{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+br{
+    margin-bottom: 5vh;
+}
+
+div{
+    width: 20vw;
+}
+
+@media (max-height:870px){
+    img{
+        height: 25vh;
+    }
+    article span{
+        height: 25vh;
+    }
+}
+
+@media (max-width: 1136px){
+    img{
+        height: 25vh;
+    }
+    article span{
+        height: 25vh;
+    }
+    figcaption{
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 882px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+    }
+    img{
+        height: 15vh;
+    }
+    article{
+        height: 70vh;
+    }
+    article span{
+        height: 15vh;
+        font-size: 0.8em;
+    }
+    figcaption{
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
+    #photo2, #photo5{
+        margin-bottom: 15vh;
+    }
+}
+
+@media (max-width: 560px){
+    article span{
+        height: 10vh;
+        font-size: 0.6em;;
+    }
+    img{
+        height: 10vh;
+    }
+    figcaption{
+        font-size: 0.6em;
+    }
+}
+
